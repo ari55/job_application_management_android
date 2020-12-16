@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.VoirDetailAppActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/editext_shape"
+        android:src="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Informations generales"
+                android:textColor="#000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Date d'application"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_application"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint="Fido"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Nom de l'entreprise"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_nom_entreprise"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint="Fido"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Nom du contact"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_nom_contact"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint="Toto titi"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_telephone_contact"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint="5142223344"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_email_entreprise"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Linkedin"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_linkedin_entreprise"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_adresse_entreprise"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_modifier_info_generale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:text="Enregistrer les modifications"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center_horizontal"
+                android:text="Specifications du poste"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Titre du poste"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_titre_poste"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Description "
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_description_poste"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Language/Technologies"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_language"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="No de Reference"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_num_reference"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Remuneration"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_remuneration"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Date de fin d'affichage"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_fin_affichage"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint="Fido"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Source du poste"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_source_poste"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Fit/Match"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_match_poste"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_modifier_info_specifique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:text="Enregistrer les modifications"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Documents achemines"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="30px"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkbox_cv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CV" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_lettre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lettre" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_reference"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="References" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_releve_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Releve de notes" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_modifier_doc_achemine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:text="Enregistrer les modifications"
+                android:textColor="#FFF" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Suivie d'application"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Suivi courriel"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_suivie_courriel"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Suivi Telephonique"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_suivie_tel"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Relance/Interet"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_relance_interet"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_modifier_suivie_application"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:text="Enregistrer les modifications"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Entretien telephonique"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Date entretien"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_entretien"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Date de remerciement"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_remerciement"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Invitation Linkedin"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_invitation_linkedin"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Courriel/Appel/Suivi"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_courriel_suivie_appel"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_modifier_suivie_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_shape"
+                android:text="Enregistrer les modifications"
+                android:textColor="#FFF"
+                android:layout_marginBottom="30px"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Entrevue en personne"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Date de l'entrevue"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_entrevue"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Courriel de remerciement"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_courriel_remerciement_p"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Invitation linkedin"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_invitaion_likedin_p"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Courriel/Appel/Suivie"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_date_courriel_suivie_appel_p"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:inputType="date"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_modifier_suivie_app_en_personne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_shape"
+                    android:text="Enregistrer les modifications"
+                    android:textColor="#FFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notes/Avis/Precision"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:layout_marginBottom="20px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="350px"
+                    android:layout_height="wrap_content"
+                    android:text="Avis"
+                    android:textColor="#000" />
+
+                <EditText
+                    android:id="@+id/ed_avis_poste"
+                    android:layout_width="700px"
+                    android:layout_height="80px"
+                    android:background="@drawable/editext_shape"
+                    android:gravity="center_horizontal"
+                    android:hint=""
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ApplicationActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="20px"
+        android:background="@drawable/editext_shape"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tv_bonjour_etu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonjour nomUser"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:textColor="#000"
+        android:textSize="50px" />
+
+    <Button
+        android:id="@+id/btn_ajouter_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AJOUTER"
+        android:layout_marginLeft="50px"
+        android:textColor="#FFF"
+        android:background="@drawable/btn_shape"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informations generales de l'entreprise"
+        android:layout_gravity="center"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="40px"
+        android:textColor="#000"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="40px"
+            android:background="@color/btnGris">
+
+            <TextView
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:paddingBottom="15px"
+                android:paddingTop="15px"/>
+
+            <TextView
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:text="Entreprise"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:paddingBottom="15px"
+                android:paddingTop="15px"
+                />
+
+            <TextView
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:paddingBottom="15px"
+                android:paddingTop="15px"/>
+
+            <TextView
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:text="Telephone"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:paddingBottom="15px"
+                android:paddingTop="15px"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listview_application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

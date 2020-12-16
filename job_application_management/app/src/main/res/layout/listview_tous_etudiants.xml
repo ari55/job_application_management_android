@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20px"
+    android:layout_marginRight="20px"
+    android:layout_marginTop="40px"
+    android:background="@drawable/editext_shape"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="30px">
+
+
+    <TextView
+        android:id="@+id/lv_user_prenom"
+        android:layout_width="320px"
+        android:layout_height="wrap_content"
+        android:text="Aissata"
+        android:textColor="#000"
+        android:textSize="40px" />
+
+
+    <TextView
+        android:id="@+id/lv_user_nom"
+        android:layout_width="320px"
+        android:layout_height="wrap_content"
+        android:text="Ouattara"
+        android:textColor="#000"
+        android:textSize="40px" />
+
+    <CheckBox
+        android:id="@+id/lv_user_statut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"/>
+
+
+
+
+
+
+</LinearLayout>

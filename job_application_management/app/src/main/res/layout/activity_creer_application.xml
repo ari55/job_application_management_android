@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activities.CreerApplication">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        android:text="AJOUT D'UNE APPLICATION"
+        android:textColor="#000"
+        android:textSize="50px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="50px"
+        android:layout_marginRight="50px"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/form_shape"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="10px"
+                android:text="Information Generale"
+                android:textColor="#000"
+                android:textSize="50px" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="100px"
+                android:text="Date"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_date"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="false"
+                android:background="@drawable/editext_shape"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Nom de L'entreprise "
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_nomEntreprise"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="text"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Nom contact de L'entreprise"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_nomContactEntreprise"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="text"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Telephone"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/et_telephone"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_email_app"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Linkedin"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_linkdin"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Adresse"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_adresse"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="10px"
+                android:text="Information specifique"
+                android:textColor="#000"
+                android:textSize="50px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Titre du Poste"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_titrePoste"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Description du Poste"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_descriptionPoste"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Language utilise"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_languageutilise"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Numero de reference"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_numerodereference"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Remuneration"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_remuneration"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Date Fin D'affichage"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_dateFinDaffichage"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Source Du Poste"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_sourcePoste"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Match du poste"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_matchposte"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:text="DOCUMENTS ACHEMINES"
+                android:textColor="#000"
+                android:textSize="50px" />
+
+            <CheckBox
+                android:id="@+id/chekBCv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Cv" />
+
+            <CheckBox
+                android:id="@+id/chekBLettreMotivation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Lettre de Motivation" />
+
+
+            <CheckBox
+                android:id="@+id/chekBReleveNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Releve Note" />
+
+            <CheckBox
+                android:id="@+id/chekBAutre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="Autres" />
+
+            <CheckBox
+                android:id="@+id/chekReference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false"
+                android:text="References" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:text="SUIVIE APPLICATION"
+                android:textColor="#000"
+                android:textSize="50px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Date Suivie Courriel"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_datesuivieCourriel"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Date Suivie Telephonique"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_datesuivieTelephonique"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Relance/Interet"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_relanceInteret"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:text="SUIVIE (ENTRETIEN ) TELEPHONIQUE"
+                android:textColor="#000"
+                android:textSize="50px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Date Suivie d'entretien"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_datedentretien"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Courriel de Remerciement"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_courrieleremerciement1"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Inviation Linkedin"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_invitationlinkdin1"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="CourrielOuAppelDeSuivie"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_courrielOuAppelDeSuivie1"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_marginBottom="50px"
+                android:text="SUIVIE (ENTREVUE ) EN PERSONNE"
+                android:textColor="#000"
+                android:textSize="50px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Date D'entrevue"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_datedentrevue"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Courriel de Remerciement"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_courrieleremerciement2"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Inviation Linkedin"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_invitationlinkdin2"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="CourrielOuAppelDeSuivie"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_courrielOuAppelDeSuivie2"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110px"
+                android:layout_marginTop="30px"
+                android:text="Commentaire"
+                android:textColor="#000"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/edt_commentaire"
+                android:layout_width="800px"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:background="@drawable/editext_shape"
+                android:inputType="phone"
+                android:textAlignment="center" />
+
+
+
+            <Button
+                android:id="@+id/btn_ajouter"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30px"
+                android:layout_marginBottom="30px"
+                android:background="@color/btnRouge"
+                android:text="AJOUTER"
+                android:textColor="@color/btnBlanc" />
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

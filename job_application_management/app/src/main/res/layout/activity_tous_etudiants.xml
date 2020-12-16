@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.TousEtudiantsActivity">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="30px"
+        android:layout_marginRight="20px"
+        android:layout_marginBottom="30px"
+        android:background="@drawable/editext_shape"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/form_shape"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginBottom="40px">
+
+        <LinearLayout
+            android:id="@+id/ll_programmes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30px"
+            android:text="Tous les etudiants"
+            android:textColor="#000"
+            android:textSize="45px"
+            android:layout_marginTop="30px"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="Prenom"
+                android:textColor="#000"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:text="Nom "
+                android:textColor="#000"
+                android:textSize="40px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statut "
+                android:textColor="#000"
+                android:textSize="40px"/>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_view_tous_etudiants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

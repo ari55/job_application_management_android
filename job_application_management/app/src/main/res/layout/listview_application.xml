@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/editext_shape">
+
+    <ImageButton
+        android:id="@+id/img_delete_app"
+        android:layout_width="70px"
+        android:layout_height="70px"
+
+        android:background="@drawable/delete"
+        />
+<ImageButton
+    android:id="@+id/notificationSteph"
+    android:layout_height="70px"
+    android:layout_width="70px"
+    android:visibility="gone"
+
+    android:background="@drawable/image_alert"></ImageButton>
+    <TextView
+        android:id="@+id/tv_date_application"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:background="#D3D3D3"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_nom_entreprise"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:text="Entreprise"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:background="#D3D3D3"/>
+
+    <TextView
+        android:id="@+id/tv_nom_contact"
+        android:layout_width="250px"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:background="#D3D3D3"/>
+
+    <TextView
+        android:id="@+id/tv_tel_contact"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#D3D3D3"
+        android:paddingTop="5px"
+        android:paddingBottom="5px"
+        android:text="Telephone"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btn_voir_plus"
+        android:layout_width="60px"
+        android:layout_height="65px"
+        android:text=">>"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:paddingBottom="5px"
+        android:paddingTop="5px"
+        android:textSize="50px"
+        android:textStyle="bold"
+        android:background="#FFF"/>
+
+</LinearLayout>

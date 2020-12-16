@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONNEXION"
+        android:layout_gravity="center"
+        android:textSize="70px"
+        android:textColor="#000"
+        android:layout_marginTop="100px"
+        android:layout_marginBottom="100px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_marginBottom="100px"
+        android:layout_gravity="center"
+        android:background="@drawable/form_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom d'utilisateur (Email)"
+            android:textColor="#000"
+            android:textSize="60px"
+            android:layout_marginLeft="110px"
+            android:layout_marginTop="200px"/>
+
+        <EditText
+            android:id="@+id/et_email_login"
+            android:layout_width="800px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100px"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/editext_shape"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe"
+            android:textColor="#000"
+            android:textSize="60px"
+            android:layout_marginLeft="110px"/>
+
+        <EditText
+            android:id="@+id/et_pwd_login"
+            android:layout_width="800px"
+            android:layout_height="120px"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100px"
+            android:inputType="textPassword"
+            android:background="@drawable/editext_shape"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/btn_connexion"
+            android:layout_width="400px"
+            android:layout_height="wrap_content"
+            android:text="Connexion"
+            android:layout_gravity="center"
+            android:background="@color/btnGris"
+            android:textColor="#FFF"
+            />
+
+        <TextView
+            android:id="@+id/tv_inscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pas encore de compte ?"
+            android:textSize="60px"
+            android:textColor="#EC0909"
+            android:layout_gravity="center"
+            android:layout_marginTop="100px"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

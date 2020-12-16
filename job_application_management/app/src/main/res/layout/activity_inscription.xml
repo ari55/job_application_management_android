@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InscriptionActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INSCRIPTION"
+        android:layout_gravity="center"
+        android:textSize="50px"
+        android:textColor="#000"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="50px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="50px"
+        android:layout_marginLeft="50px"
+        android:layout_gravity="center"
+        android:background="@drawable/form_shape"
+        android:layout_marginBottom="40px">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="100px"/>
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/editext_shape"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom "
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="30px"/>
+
+                <EditText
+                    android:id="@+id/et_nom"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:background="@drawable/editext_shape"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prenom"
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="30px"/>
+
+                <EditText
+                    android:id="@+id/et_prenom"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:background="@drawable/editext_shape"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Telephone"
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="30px"/>
+
+                <EditText
+                    android:id="@+id/et_telephone"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:inputType="phone"
+                    android:background="@drawable/editext_shape"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Programme"
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="30px"/>
+
+                <Spinner
+                    android:id="@+id/sp_programme"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:spinnerMode="dropdown" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date de naissance"
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginTop="30px"/>
+
+                <EditText
+                    android:id="@+id/et_date_naissance"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:background="@drawable/editext_shape"
+                    android:textAlignment="center"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mot de passe "
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="30px"/>
+
+                <EditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:background="@drawable/editext_shape"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmer le mot de passe"
+                    android:textColor="#000"
+                    android:textSize="40px"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="30px"/>
+
+                <EditText
+                    android:id="@+id/et_pwd2"
+                    android:layout_width="800px"
+                    android:layout_height="100px"
+                    android:layout_gravity="center"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:background="@drawable/editext_shape"/>
+
+                <Button
+                    android:id="@+id/btn_inscription"
+                    android:layout_width="300px"
+                    android:layout_height="wrap_content"
+                    android:text="INSCRIPTION"
+                    android:textColor="#FFFF"
+                    android:background="@color/btnGris"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30px"
+                    android:layout_marginBottom="30px"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>
